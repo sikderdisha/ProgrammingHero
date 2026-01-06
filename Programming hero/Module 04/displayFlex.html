@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.box{
+    border: 2px solid gold;
+    font-size: 3rem;
+     display: inline; /*side by side*/
+     margin: 5px; /*create gap between divs*/
+
+}
+.flex{
+    display: flex;/*side by side*/
+    justify-content: space-between; /*make the container center*/
+    flex-wrap: wrap; /*next line*/
+    
+}
+.flex-box{
+    width: 500px;
+    border: 10px solid #d4b713;
+    background-color: blueviolet;
+    color: aliceblue;
+    text-align: center; /*make content center*/
+    
+}
+    </style>
+</head>
+<body>
+    <!-- inline display  -->
+    <div class="container">
+         <!-- .div{$}*6  -->
+<div class="box">1</div>
+<div class="box">2</div>
+<div class="box">3</div>
+<div class="box">4</div>
+    </div>
+
+    <!-- flex container  -->
+     <div class="flex">
+        <!-- .box{$user}*3  -->
+         <div class="flex-box">1</div>
+         <div class="flex-box">2</div>
+         <div class="flex-box">3</div>
+           <div class="flex-box">1</div>
+         <div class="flex-box">2</div>
+         <div class="flex-box">3</div>  <div class="flex-box">1</div>
+         <div class="flex-box">2</div>
+         <div class="flex-box">3</div>  <div class="flex-box">1</div>
+         <div class="flex-box">2</div>
+         <div class="flex-box">3</div>  <div class="flex-box">1</div>
+         <div class="flex-box">2</div>
+         <div class="flex-box">3</div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+nav ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 25px;
+    font-weight: bold;
+}
+nav a{
+    text-decoration: none;
+}
+nav li:hover{
+    background-color: wheat;
+    cursor: pointer;
+}
