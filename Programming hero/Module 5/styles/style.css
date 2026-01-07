@@ -14,18 +14,22 @@
     background-color: #FD6E0A;
     width: 150px;
     height: 60px;
-     font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    padding: 18px 36px;
+    padding: 18px 15px;
     color: white;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
 
 /* main style  */
 /* style header  */
 header{
-    background-color: #FFF8F3;
+    
+    background: url(../images/developer.png),url(../images/header_bg.png), #FFF8F3;
+    background-position: top left,bottom right;
+    background-repeat: no-repeat;
     padding-top: 40px;
 }
 nav{
@@ -56,4 +60,41 @@ nav a{
     font-weight: bold;
     color: #474747;
 }
+/* banner section  */
+#banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 46px 38px 0px 214px;
+}
+.banner-heading{
+    max-width:618px;
+    height: 504px;
+}
+#banner .banner-heading h2{
+    font-size: 45px;
+    font-weight:600;
+    margin-bottom: 5px;
+    color: #474747;
+}
+#banner .banner-heading h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #181818;
+}
+#banner .banner-heading p{
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    color: #757575;
+}
+#banner .banner-button{
+    display: flex;
+    gap: 20px;
+}
+#banner .banner-img img{
+    max-width: 584px;
+    vertical-align: middle;/* remove bottom gap of image */
+}
+/* end of banner section  */
 
