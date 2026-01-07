@@ -22,6 +22,11 @@
     border: none;
     cursor: pointer;
 }
+.pera{
+    font-size: 18px;
+    line-height: 30px;
+    color: #757575;
+}
 
 /* main style  */
 /* style header  */
@@ -82,11 +87,8 @@ nav a{
     margin-bottom: 20px;
     color: #181818;
 }
-#banner .banner-heading p{
-    font-size: 18px;
-    line-height: 30px;
+#banner .banner-heading .pera{
     margin-bottom: 30px;
-    color: #757575;
 }
 #banner .banner-button{
     display: flex;
