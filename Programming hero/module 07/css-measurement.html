@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 10px;
+        }
+        .container{
+            font-size: 10px;
+            background-color: aqua;
+            height: 50vh; /*half of the viewport*/
+            width: 50vw;  /*half of the viewport*/
+        }
+        #div1{
+            font-size: 3em; /*change according the parent's font size*/
+            padding: 3em; /*depend of the font size of child */
+
+        }
+        #div2{
+            font-size: 4rem; /*change according to the root/html*/
+        }
+    </style>
+</head>
+<body>
+    <!-- use of em in font size -->
+     <div class="container">
+        <div id="div1">Disha sikder</div>
+        <div id="div2">Disha sikder</div>
+        <div id="div3">Disha sikder</div>
+     </div>
+</body>
+</html>
