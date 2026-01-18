@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+        
+        }
+        nav a{
+            text-decoration: none;
+        }
+        .login-container{
+            display: flex;
+            background-color: aquamarine;
+            justify-content: center;
+            text-align: center;
+            height: 50vh;
+        }
+        .form-login input{
+            margin-top: 20px;
+        }
+        .form-login{
+            display: flex;
+            flex-direction: column;
+            border: 3px solid black;
+            width: 50%;
+        }
+        .form-login button{
+            margin-top: 20px;
+            width: 20%;
+            background-color: chocolate;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+       <div>
+         <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+       </div>
+        <a href="#">Signup</a>
+    </nav>
+    <div class="login-container">
+        <form action="" class="form-login">
+            <input type="email" placeholder="Email" required>
+             <input type="password" placeholder="password" required>
+             <button>Login</button>
+        </form>
+    </div>
+</body>
+</html>

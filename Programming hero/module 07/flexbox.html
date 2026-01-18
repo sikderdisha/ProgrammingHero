@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .first-container{
+            background-color: aqua;
+            height: 350px;
+            display: flex;
+            flex-direction: column; /*column wise*/
+
+        }
+        .first-container > div{
+            border: 2px solid blue;
+            height: 200px;
+        }
+        .s-container{
+            background-color: rgb(199, 144, 24);
+            height: 450px;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .s-container > div{
+            border: 2px solid blue;
+            height: 200px;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="first-container">
+        <div>div1</div>
+        <div>div2</div>
+        <div>div3</div>
+    </div>
+    <div class="s-container">
+        <div>div1</div>
+        <div>div2</div>
+        <div>div3</div>
+         <div>div1</div>
+        <div>div2</div>
+        <div>div3</div>
+         <div>div1</div>
+        <div>div2</div>
+        <div>div3</div>
+         <div>div1</div>
+        <div>div2</div>
+        <div>div3</div>
+    </div>
 </body>
 </html>

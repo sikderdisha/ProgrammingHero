@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            background-color: rgb(245, 240, 179);
+            gap: 15px;
+        }
+        
+        .coffee-card img{
+            width: 100%;
+            border: 3px solid orangered;
+        }
+        /*responsive for small device*/
+        @media screen and (max-width:576px){
+             .container{
+                grid-template-columns: repeat(1,1fr);
+            
+             }
+        }
+        /*responsive for medium device*/
+        @media (min-width:577px) and (max-width:768px){
+                 .container{ grid-template-columns: repeat(2,1fr); 
+                    background-color: rgb(189, 112, 154);
+                }
+        }
+        /*responsive for large device*/
+        @media (min-width:769px) and (max-width:992px) {
+            .container{
+                grid-template-columns: repeat(3,1fr);
+                background-color: rgb(239, 177, 102);
+            
+            }
+            
+        }
+        @media (min-width:993px){
+  .container{ grid-template-columns: repeat(4,1fr); 
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="coffee-card">
+            <img src="coffee.jpg" alt="">
+            <h3>food_item - 1</h3>
+            <p>price - 100</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi rerum nobis blanditiis placeat. Aspernatur, sint!</p>
+        </div>
+        <div class="coffee-card">
+            <img src="coffee.jpg" alt="">
+            <h3>food_item - 2</h3>
+            <p>price - 200</p>
+            <p>Totam laboriosam ratione quis vero nesciunt dolorem pariatur autem reiciendis amet, tempora, voluptate, ullam accusamus!</p>
+        </div>
+        <div class="coffee-card">
+            <img src="coffee.jpg" alt="">
+            <h3>food_item - 3</h3>
+            <p>price - 300</p>
+            <p>Quam natus modi temporibus explicabo vel molestiae maxime architecto voluptatem, eos, saepe quibusdam a doloremque?</p>
+        </div>
+        <div class="coffee-card">
+            <img src="coffee.jpg" alt="">
+            <h3>food_item - 4</h3>
+            <p>price - 400</p>
+            <p>Nisi sed explicabo molestias repellat repellendus atque odit excepturi? Modi corporis praesentium inventore officiis impedit.</p>
+        </div>
+        <div class="coffee-card">
+            <img src="coffee.jpg" alt="">
+            <h3>food_item - 5</h3>
+            <p>price - 500</p>
+            <p>Dolores maiores cupiditate alias facilis, harum sint, mollitia nulla ab consequuntur eos ex, ullam eveniet.</p>
+        </div>
+        <div class="coffee-card">
+            <img src="coffee.jpg" alt="">
+            <h3>food_item - 6</h3>
+            <p>price - 600</p>
+            <p>Unde, iusto in. Eum soluta inventore aliquid non, odit numquam accusamus quae et ipsum fugit!</p>
+        </div>
+        <div class="coffee-card">
+            <img src="coffee.jpg" alt="">
+            <h3>food_item - 7</h3>
+            <p>price - 700</p>
+            <p>Eligendi fuga ipsa eaque sapiente iusto corporis saepe possimus recusandae. Quae cumque incidunt nobis et.</p>
+        </div>
+        <div class="coffee-card">
+            <img src="coffee.jpg" alt="">
+            <h3>food_item - 8</h3>
+            <p>price - 800</p>
+            <p>Laudantium, magnam nam asperiores perferendis fugiat amet eum reiciendis, suscipit ratione, accusamus error sapiente atque?</p>
+        </div>
+        <div class="coffee-card">
+            <img src="coffee.jpg" alt="">
+            <h3>food_item - 9</h3>
+            <p>price - 900</p>
+            <p>Fuga, dolores officia amet, eius aperiam deserunt vitae facilis perspiciatis rem dolorem magni. Ipsam, omnis!</p>
+        </div>
+        <div class="coffee-card">
+            <img src="coffee.jpg" alt="">
+            <h3>food_item - 10</h3>
+            <p>price - 1000</p>
+            <p>Numquam impedit neque sequi asperiores maiores? Temporibus eveniet sapiente non minima ducimus consequatur facere expedita!</p>
+        </div>
+        <div class="coffee-card">
+            <img src="coffee.jpg" alt="">
+            <h3>food_item - 11</h3>
+            <p>price - 1100</p>
+            <p>Provident, possimus amet dolorem aspernatur expedita, fugit saepe dolores doloremque eligendi consequuntur eum tempore nulla.</p>
+        </div>
+        <div class="coffee-card">
+            <img src="coffee.jpg" alt="">
+            <h3>food_item - 12</h3>
+            <p>price - 1200</p>
+            <p>Ipsum possimus recusandae, praesentium eaque, iste iusto dignissimos provident sunt officia labore et id cumque?</p>
+        </div>
+        <div class="coffee-card">
+            <img src="coffee.jpg" alt="">
+            <h3>food_item - 13</h3>
+            <p>price - 1300</p>
+            <p>Cum incidunt dolorem culpa alias optio, ad ducimus distinctio iure accusantium ea deleniti ex sequi!</p>
+        </div>
+        <div class="coffee-card">
+            <img src="coffee.jpg" alt="">
+            <h3>food_item - 14</h3>
+            <p>price - 1400</p>
+            <p>Laborum est dolores distinctio doloribus. Impedit in corporis aliquam quidem cupiditate est sit, temporibus repellat!</p>
+        </div>
+        <div class="coffee-card">
+            <img src="coffee.jpg" alt="">
+            <h3>food_item - 15</h3>
+            <p>price - 1500</p>
+            <p>Sint fugiat illo possimus facere quam culpa rerum dolore sit quo animi, nam asperiores sequi.</p>
+        </div>
+        <div class="coffee-card">
+            <img src="coffee.jpg" alt="">
+            <h3>food_item - 16</h3>
+            <p>price - 1600</p>
+            <p>Beatae perspiciatis quisquam aperiam eveniet! Quo sed doloribus eos nobis enim esse alias odio eaque.</p>
+        </div>
+        <div class="coffee-card">
+            <img src="coffee.jpg" alt="">
+            <h3>food_item - 17</h3>
+            <p>price - 1700</p>
+            <p>Sit amet accusamus debitis et iusto, omnis vero consequatur exercitationem deserunt ad repudiandae neque odio.</p>
+        </div>
+        <div class="coffee-card">
+            <img src="coffee.jpg" alt="">
+            <h3>food_item - 18</h3>
+            <p>price - 1800</p>
+            <p>Quos iure aspernatur accusamus odit libero cum, iusto est sit nobis laudantium aliquam, molestiae nam.</p>
+        </div>
+        <div class="coffee-card">
+            <img src="coffee.jpg" alt="">
+            <h3>food_item - 19</h3>
+            <p>price - 1900</p>
+            <p>Tempora vero iure explicabo porro atque cumque ipsum quo hic maiores ipsa, suscipit exercitationem aliquid.</p>
+        </div>
+        <div class="coffee-card">
+            <img src="coffee.jpg" alt="">
+            <h3>food_item - 20</h3>
+            <p>price - 2000</p>
+            <p>Cupiditate dolorum voluptas, at, vitae voluptate beatae totam exercitationem blanditiis obcaecati accusantium, tempora rem ipsum!</p>
+        </div>
+    </div>
+</body>
+</html>
