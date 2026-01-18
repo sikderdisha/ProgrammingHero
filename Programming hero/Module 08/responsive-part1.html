@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 10px;
+
+        }
+        .box{
+            background-color: cadetblue;
+            color: white;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        /* responsive for mobile  */
+        @media  screen and (max-width:576px) {
+            .container{
+                flex-direction: column;
+                
+            }
+            .box{
+                background-color: aquamarine;
+                color: black;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+   <!-- .container>.box{box - $}*2>h3{box$}+p{lorem10}  -->
+
+   <div class="container">
+    <div class="box">box - 1
+        <h3>box1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste.</p>
+    </div>
+    <div class="box">box - 2
+        <h3>box2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste.</p>
+    </div>
+   </div>
+</body>
+</html>
