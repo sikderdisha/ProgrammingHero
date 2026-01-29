@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body{
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+}
+/* navbar section  */
+.navbar{
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navbar #title{
+    color: #FA8112;
+    font-style: italic;
+}
+.navbar ul{
+    display: flex;
+    gap: 30px;
+    padding: 5px 10px;
+    border-radius: 40px;
+    border: 1px solid gray;
+    align-items: center;
+}
+.navbar li{
+    list-style: none;
+}
+.home{
+    background-color:#FA8112;
+    padding:5px 10px;
+    border-radius: 30px;
+}
+.fa-bars{
+    color: white; 
+    font-size: 20px;  
+    
+}
+.menu{
+    display: none;
+}
+/* banner section  */
+.hero-container{
+    max-width: 1200px;
+    margin: 0 auto 80px auto;  
+    /* top:0 | right:auto | bottom:80px | left:auto */
+    display: flex;
+    color: white;
+    padding: 5px;
+}
+.description > h1{
+    font-size: 78px;
+    padding-top: 20px;
+    
+}
+.description{
+    width: 50%;
+}
+.description>p{
+    margin-top: 28px;
+}
+.btn{
+    display: flex;
+    gap: 15px;
+    margin-top: 28px;
+}
+.btn button{
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    color: white;
+    font-size: 18px;
+    background-color:#FA8112;
+}
+#dwn-btn{
+    background-color: transparent;
+    border: 1px solid gray;
+}
+.display-image{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    object-fit: cover;
+    position: relative;
+}
+.display-image img{
+    width: 52%;
+}
+.tooltip{
+    position: absolute;
+    top: 30%;
+   right:-10%;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.249);
+    width: 180px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+.tooltip2{
+    position: absolute;
+    top: 65%;
+    left: 28%;
+    color: white;
+    background-color: rgba(97, 97, 97, 0.249);
+    width: 180px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    border-radius: 20px;
+}
+.red-ball{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: red;
+}
+.text-box{
+    display: flex;
+    flex-direction: column; 
+    line-height: 1.1;
+}
+/* training section  */
+.grid-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.grid-container>h1{
+    font-size: 70px;
+    
+}
+.box1{
+    grid-area: box1;
+}
+.box2{
+    grid-area: box2;
+}
+.box3{
+    grid-area: box3;
+}
+.box4{
+    grid-area: box4;
+}
+.box5{
+    grid-area: box5;
+}
+.box6{
+    grid-area: box6;
+}
+.grid-box{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,270px);
+    grid-template-areas: "box1 box2 box2 box3"
+                          "box4 box4 box5 box6";
+}
+.grid-box > div{
+    overflow: hidden;   /* image বাইরে গেলে কেটে দেবে */
+}
+.grid-container p{
+    margin-top: 10px;
+    color: rgba(167, 161, 161, 0.82);
+}
+.grid-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+}
+.grid-box >div{
+    position: relative;
+}
+.grid-box > div >p{
+    position: absolute;
+    color: rgb(225, 220, 220);
+    z-index: 30;
+    bottom: 8%; 
+    left: 5%;
+    font-size: 18px;
+}
+
+/* responsive codes  */
+@media screen and (max-width: 576px) {
+    #nav-links{
+        display: none;
+    }
+    .menu{
+        display: block;
+        margin-right: 10px;
+        
+    }
+    .hero-container{
+        flex-direction: column;
+    }
+    .description,.display-image{
+        width: 100%;
+    }
+    .display-image {
+        justify-content: center; 
+        margin-top: 20px; 
+    }
+    .grid-box{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 270px);
+        grid-template-areas: 
+            "box1 box2"
+            "box4 box5" ;
+}
+.box3,.box6{
+    display: none;
+}
+}
