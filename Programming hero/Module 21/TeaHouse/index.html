@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea House</title>
+     
+    <!-- tailwind css  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- google fonts  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+     <!-- font awesome  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <link rel="stylesheet" href="tailwind.css">
+
+     <style>
+        *{
+            font-family: "Manrope", sans-serif;
+        }
+     </style>
+</head>
+<body>
+   <!-- banner section  -->
+    <section class="flex flex-col md:flex-row justify-between items-center container border border-red-500 mx-auto">
+   <!-- banner left -->
+        <div class="banner-left space-y-[30px]">
+            <h1 class="text-[80px] font-bold">It's good <br> tea time at The <br> Tea House</h1>
+            <p class="text-[15px] text-[#777777] leading-[22px] max-w-md">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+            <button class="text-[18px] bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white p-[15px] rounded-[15px]">Explore More <span class="-rotate-50 inline-block"><i class="fa-solid fa-arrow-right-long"></i></span>
+            </button>
+        </div>
+    <!-- banner-right  -->
+        <div class="banner-right relative">
+            <img src="./images/banner.png" alt="random">
+
+            <!-- rating  -->
+             <div class="w-[250px] h-auto 
+             p-[10px] flex gep-[10px] items-center absolute left-[85px] bottom-[37px] bg-white rounded-[5px] shadow-lg">
+                <img src="./images/star.png" alt="" class="w-[50px] h-[50px]">
+                <div>
+                    <h2 class="font-bold text-[30px]">5.00</h2>
+                    <p class="text-[16px] text-[#777777]">Trust Pilot Ratings</p>
+                </div>
+             </div>
+        </div>
+    </section>
+</body>
+</html>
