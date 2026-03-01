@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>my name is dihsa</h1>
+    <button id="update">Update</button>
+
+
+    <!-- form update  -->
+    <!-- name>click on update btn>update the name of p tag  -->
+     <p id="name">Name</p>
+     <input placeholder="Your name" type="text" id="input">
+     <button id="btn">update</button>
+
+    <script>
+        const updateTitle =document.getElementById('update');
+        updateTitle.addEventListener('click',function(){
+            h1.innerText='My name is Disha';
+        })
+
+        //2nd part
+        //set eventlistener
+        document.getElementById('btn').addEventListener('click',function(){
+            //get the text from input
+            const inputName=document.getElementById('input');
+            console.log(inputName);
+
+            //show txt on console
+            const nameInput=inputName.value;
+            console.log(nameInput);
+
+            //set name on p tag
+            const update =document.getElementById('update');
+            update.innerText=nameInput;
+
+        })
+
+    </script>
+</body>
+</html>

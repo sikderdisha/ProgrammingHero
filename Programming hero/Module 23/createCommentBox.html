@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            padding:10px;
+            border: 1px solid black;
+            background-color: aquamarine;
+            color: rgb(15, 140, 249);
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our comment Box</h1>
+
+    <section>
+        <div id="parent-id">
+            <p class="box" ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil in adipisci, eaque nam quae nostrum sint corrupti, ducimus quis, tempore tempora accusantium veritatis laborum unde? Eum minus hic natus? Quis.</p>
+            <p class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quis exercitationem consequuntur dolore, accusamus quas corporis assumenda, labore nulla eligendi autem quo quibusdam unde id quos ex voluptatem quia. Velit.</p>
+            <p class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut libero iste natus commodi voluptatum, ipsa nihil omnis eaque id dicta sapiente. Deleniti totam quidem consequuntur ullam veritatis culpa natus sit!</p>
+        </div>
+        <form action="">
+            <textarea name="text" id="text" cols="40" rows="10"></textarea><br>
+            <button id="btn">post</button>
+        </form>
+    </section>
+
+    <script>
+        //step 1:addEventListener
+        document.getElementById('btn').addEventListener('click',function(e){
+            e.preventDefault(); // ✨ important
+            //get the text from comment box
+            const commentText=document.getElementById('text');
+
+            const newComment=commentText.value;
+
+            //step 3 get the parent
+            const parComponent=document.getElementById('parent-id');
+            console.log(parComponent);
+
+            //step 4 create tag
+
+            const commentNew=document.createElement('p');
+            commentNew.innerText=newComment;
+            commentNew.classList.add("box");
+
+            //connect parent and new p
+            parComponent.appendChild(commentNew);
+           
+        })
+
+    </script>
+</body>
+</html>

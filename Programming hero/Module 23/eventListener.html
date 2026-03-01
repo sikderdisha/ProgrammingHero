@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello disha</h1>
+
+    <button id="btn">click here</button>
+    <button id="gold">Make gold</button>
+
+    <script>
+        //document.getElementById().addListener(event type,handler)
+        document.getElementById('btn').addEventListener('click',function makeBlue(){
+            document.body.style.backgroundColor='blue';
+        })
+
+        //mouseover event
+        document.getElementById('gold').addEventListener('mouseover',function(){
+            gold.style.backgroundColor='pink';
+            alert('This button is clicked');
+        //click event
+        document.getElementById('gold').addEventListener('click',function(){
+             document.body.style.backgroundColor='gold';
+        })
+   
+        //mouseout event
+        document.getElementById('gold').addEventListener('mouseout',function(){
+            gold.style.backgroundColor='green';
+             gold.style.color='white';
+        })
+            
+        })
+
+
+    </script>
+</body>
+</html>

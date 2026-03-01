@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- option 1 for onclick(not applicable) -->
+    <h1>hello</h1>
+    <button onclick="console.log('clicked')">click me</button><br>
+
+    <!-- option 2 for onclick event handle(using function) -->
+     <button onclick="makeBlack()">New button</button>
+     <button id="blue">Make blue</button>
+
+     <button id="green">Make green</button>
+     <script>
+        function makeBlack(){
+            document.body.style.backgroundColor='black';
+            
+            const h=document.getElementsByTagName('h1')[0];
+            h.style.color='white';
+        }
+
+        //2nd part
+        const b=document.getElementById('blue');
+        console.log(b);
+
+        b.onclick=function MakeBlue(){
+            b.style.backgroundColor='blue';
+            document.body.style.backgroundColor='pink';
+        }
+
+        //part 3
+        const r=document.getElementById('green');
+
+        r.onclick=makeGreen;
+
+        function makeGreen(){
+            document.body.style.backgroundColor='green';
+        }
+     </script>
+</body>
+</html>
