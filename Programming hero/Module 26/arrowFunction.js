@@ -16,3 +16,16 @@ const total = function(num1,num2)
     return num1 + num2;
 }
 console.log(total(20,20));//40
+
+
+
+//arrow function
+const f = (n1,n2) => n1+n2;
+console.log(f(25,20));
+
+const pi = () => 3.1417;
+console.log(pi());
+
+const n = name => console.log(name);
+
+n('disha');
